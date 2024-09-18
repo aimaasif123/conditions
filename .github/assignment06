@@ -1,0 +1,64 @@
+# Insert function
+def insert_value(array, index, value):
+    array.insert(index, value)
+    return array
+# Simple shopping cart program
+cart = []
+def add_item(item, quantity):
+    cart.append ((item, quantity))
+    "print_cart"()
+def update_quantity(item, quantity):
+    global cart
+    for i in range(len(cart)):
+        if cart[i][0] == item:
+            cart[i] = (item, quantity)
+    "print_cart"()
+def print_cart():
+    print("Shopping cart contents:")
+    for item, quantity in cart:
+        print(f" {item}: {quantity}")
+# Print first 25 integers
+count = 0
+while count < 25:
+    print(count)
+    count += 1
+# Print first 10 even numbers
+count = 0
+even_count = 0
+while even_count < 10:
+    if count % 2 == 0:
+        print(count)
+        even_count += 1
+    count += 1
+# Factorial function
+def factorial(n):
+    result = 1
+    while n > 1:
+        result *= n
+        n -= 1
+    return result
+# Remove negative numbers from array
+numbers = [10, -1, 20, -5, 30]
+numbers = [num for num in numbers if num >= 0]
+print(numbers)
+# Sum of nuumbers in array
+def sum_array(numbers):
+    total = 0
+    index = 0
+    while index < len(numbers):
+        total += numbers[index]
+        index += 1
+    return total
+# Convert celsius to fahrenheit
+celsius_temps = [0, 20, 37, 100]
+fahrenheit_temps = []
+index = 0
+while index < len(celsius_temps):
+    fahrenheit_temps = (celsius_temps [index] * 9/5) + 32
+    fahrenheit_temps.append("fahrenheit")
+    index += 1
+print(fahrenheit_temps)
+# Remove odd numbers from array
+numbers = [1,2,3,4,5,6]
+numbers = [num for num in numbers if num % 2 == 0]
+print(numbers)
