@@ -10,7 +10,7 @@ def check_numbers(num):
     elif num < 0:
         print ( f" {num} is Negative.") 
     else:
-        print ( " The number is zerp.")   
+        print ( " The number is zero.")   
 # Function to check divisibility
 def check_numbers(num):
     divisible_by_2 = (num % 2 == 0)
@@ -58,4 +58,4 @@ def check_leap_year(year):
     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
         print (f" {year} is a leap year.")
     else:
-        print (f" {year} is not a leap year.")
+        print (f" {year} is not a leap year.") 
